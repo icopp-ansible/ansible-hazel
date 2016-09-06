@@ -1,0 +1,5 @@
+---
+- name: Install Hazel via Homebrew Cask
+  homebrew_cask:
+    name: hazel
+  when: ansible_os_family == "Darwin"
